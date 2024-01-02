@@ -3,6 +3,7 @@ import 'package:doc_booker/doc_booker.dart';
 import 'package:flutter/material.dart';
 
 void main() {
+  
   WidgetsFlutterBinding.ensureInitialized();
   runApp(DocBooker(
     appRouter: AppRouter(),
