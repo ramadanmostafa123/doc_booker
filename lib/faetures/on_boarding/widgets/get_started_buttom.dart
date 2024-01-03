@@ -1,3 +1,5 @@
+import 'package:doc_booker/core/helpers/extentions.dart';
+import 'package:doc_booker/core/routing/routes.dart';
 import 'package:doc_booker/core/theming/colors.dart';
 import 'package:doc_booker/core/theming/text_style.dart';
 import 'package:flutter/material.dart';
@@ -25,10 +27,12 @@ class GetStartedButtom extends StatelessWidget {
           ),
         ),
       ),
-      onPressed: () {},
+      onPressed: () {
+        context.pushNamed(Routes.loginScreen);
+      },
       child: Text(
         'Get Started',
-        style: TextStyles.font16white600Weight,
+        style: TextStyles.font16WhiteSemiBold,
       ),
     );
   }
