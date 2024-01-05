@@ -55,6 +55,8 @@ dependencies:
   flutter_svg: ^2.0.9
   #A flutter plugin for adapting screen and font size
   flutter_screenutil: ^5.9.0
+  #A build system for Dart code generation and modular compilation.
+  build_runner: ^2.4.7
 
 
 
