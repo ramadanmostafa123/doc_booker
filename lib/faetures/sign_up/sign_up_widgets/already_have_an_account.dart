@@ -1,6 +1,9 @@
+import 'package:doc_booker/core/helpers/extentions.dart';
+import 'package:doc_booker/core/theming/text_style.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
-import '../../../core/theming/text_style.dart';
+import '../../../../core/routing/routes.dart';
 
 class AlreadyHaveAccountText extends StatelessWidget {
   const AlreadyHaveAccountText({super.key});
@@ -13,11 +16,15 @@ class AlreadyHaveAccountText extends StatelessWidget {
         children: [
           TextSpan(
             text: 'Already have an account?',
-            style: TextStyles.font13DarkBlueRegular,  
+            style: TextStyles.font13DarkBlueRegular,
           ),
           TextSpan(
-            text: ' Sign Up',
+            text: ' Login',
             style: TextStyles.font13BlueSemiBold,
+            recognizer: TapGestureRecognizer()
+              ..onTap = () {
+                context.pushReplasmentNamed(Routes.loginScreen);
+              },
           ),
         ],
       ),
